@@ -1,0 +1,957 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>1.15. Введение в CameraRaw - Графические редакторы</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+<meta name="generator" content="TurboSite 1.7.1" />
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="logo">
+		<h1>Графические редакторы</h1>
+		<p><em>Учебное пособие</em></p>
+	</div>
+	<hr />
+	<!-- end #logo -->
+	<div id="header">
+		<div id="menu">
+			<ul>
+				<li><a style="" href="index.html">Главная</a></li>
+
+			</ul>
+		</div>
+		<!-- end #menu -->
+	</div>
+	<!-- end #header -->
+	<!-- end #header-wrapper -->
+	<div id="page">
+	<div id="page-bgtop">
+		<div id="content">
+			<div class="post">
+				<h2 class="title">1.15. Введение в CameraRaw</h2>
+				<div class="entry">
+					
+<DIV class="text first-heading aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<H1 id=about_camera_raw_files 
+style="BOX-SIZING: border-box; FONT-SIZE: 32px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 400; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 1em; PADDING-RIGHT: 0px">Сведения 
+о файлах необработанных снимков</H1></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Файл&nbsp;<SPAN>&nbsp;</SPAN><I 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px">необработанного 
+снимка</I><SPAN>&nbsp;</SPAN>содержит необработанные, несжатые данные 
+изображения в градациях серого, полученные с фотосенсора цифровой камеры, наряду 
+с информацией о том, как была произведена съемка изображения (метаданные). 
+Внешний модуль Photoshop® Camera Raw интерпретирует файл необработанного снимка 
+на основе информации о камере и метаданных изображения для последующего 
+выполнения операций по формированию и обработке цветного изображения.</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Можно 
+рассматривать файл необработанного снимка как фотонегатив. Такой файл в любое 
+время может быть повторно обработан для достижения требуемых результатов путем 
+изменения таких параметров, как баланс белого, диапазон тонов, контраст, 
+насыщенность цвета и резкость. При корректировке изображения необработанного 
+снимка исходные данные снимка остаются неизменными. Корректировки сохраняются в 
+виде метаданных в прилагаемом сопроводительном файле, базе данных или самом 
+файле (в случае применения формата DNG).</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Когда 
+производится съемка с получением файлов JPEG, камера автоматически обрабатывает 
+файл JPEG для улучшения качества и сжатия изображения. Однако в этом случае 
+управлять ходом обработки изображения практически невозможно. Съемка камерой 
+изображений в виде необработанных снимков позволяет получить больший контроль 
+над изображением по сравнению со съемкой в формате JPEG, поскольку при 
+использовании необработанных снимков можно не ограничиваться той обработкой, 
+которая выполняется камерой. Хотя изображения формата JPEG и TIFF можно 
+отредактировать в Camera Raw, но при этом выполняется редактирование пикселей, 
+которые уже обработаны камерой. Файлы необработанных снимков всегда содержат 
+исходные, необработанные пикселы данных, полученные с камеры.</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Для 
+съемки с получением изображений в виде необработанных снимков необходимо 
+произвести настройку камеры для сохранения файлов в формате необработанного 
+снимка камеры.</P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class=helpx-note 
+style="BOX-SIZING: border-box; BORDER-TOP: rgb(112,112,112) 2px solid; BORDER-RIGHT: rgb(112,112,112) 2px solid; BORDER-BOTTOM: rgb(112,112,112) 2px solid; COLOR: rgb(112,112,112); PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 20px; BORDER-LEFT: rgb(112,112,112) 2px solid; MARGIN: 20px 0px; PADDING-RIGHT: 20px; border-radius: 4px">
+<DIV class=note-header 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; DISPLAY: flex; justify-content: space-between; align-items: center"><SPAN 
+class=note-title 
+style="BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 600; COLOR: rgb(44,44,44); BORDER-LEFT: 0px">Примечание.</SPAN> 
+
+<DIV class=note-icon 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; HEIGHT: 22px; BORDER-RIGHT: 0px; WIDTH: 22px; BACKGROUND: url(data:image/svg+xml,%3Csvg%20id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23707070%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3EArtboard%205%3C%2Ftitle%3E%3Cpath%20id%3D%22_Compound_Path_%22%20data-name%3D%22%26lt%3BCompound%20Path%26gt%3B%22%20class%3D%22cls-1%22%20d%3D%22M9%2C2.12a7%2C7%2C0%2C1%2C0%2C7%2C7A7%2C7%2C0%2C0%2C0%2C9%2C2.12ZM8%2C5.62a.5.5%2C0%2C0%2C1%2C.5-.5h1a.5.5%2C0%2C0%2C1%2C.5.5v1a.5.5%2C0%2C0%2C1-.5.5h-1a.5.5%2C0%2C0%2C1-.5-.5Zm2.42%2C7.5H7.63s-.58%2C0-.58-.5.58-.5.58-.5H8v-3H7.6S7%2C9.11%2C7%2C8.62s.58-.5.58-.5H9.8a.2.2%2C0%2C0%2C1%2C.2.2v3.8h.42s.58%2C0%2C.58.5S10.42%2C13.12%2C10.42%2C13.12Z%22%2F%3E%3C%2Fsvg%3E); BORDER-BOTTOM: 0px; FLOAT: right; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 10px; BORDER-LEFT: 0px; PADDING-RIGHT: 10px"></DIV></DIV>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 400; FONT-STYLE: normal !important; BORDER-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: 1.5; overflow-wrap: break-word">Формат 
+Photoshop Raw (.raw) является форматом файла, предназначенным для передачи 
+изображений между приложениями и компьютерными платформами. Не следует путать 
+формат Photoshop Raw с форматом файла Camera Raw. Расширения файлов Camera Raw 
+различаются в зависимости от производителя камеры.</P></DIV></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Цифровые 
+камеры снимают и сохраняют данные необработанного снимка с линейной кривой 
+относительной спектральной чувствительности (гамма равна 1,0). С другой стороны, 
+фотопленка и человеческий глаз характеризуются нелинейной, логарифмической 
+спектральной чувствительностью к свету (гамма больше 2). Не прошедшее обработку 
+изображение в виде необработанного снимка, просматриваемое как изображение в 
+градациях серого, может показаться очень темным, поскольку то, что 
+представляется фотосенсору и компьютеру вдвое более ярким, не кажется таковым 
+человеческому глазу.</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Список 
+поддерживаемых камер и дополнительную информацию о Camera Raw см. в 
+документе<SPAN>&nbsp;</SPAN><A 
+style="BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; COLOR: rgb(20,115,230); BORDER-LEFT: 0px; BACKGROUND-COLOR: transparent" 
+href="https://www.adobe.com/go/learn_ps_cameraraw_ru" daa-lh="1" 
+daa-ll="Поддержка необработанных снимков с цифровых фотокамер" 
+daa-level="4">Поддержка необработанных снимков с цифровых фотокамер</A>.</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Список 
+камер и поддерживаемых версий Camera Raw см. в разделе<SPAN>&nbsp;</SPAN><A 
+style="BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; COLOR: rgb(20,115,230); BORDER-LEFT: 0px; BACKGROUND-COLOR: transparent" 
+href="https://helpx.adobe.com/ru/camera-raw/kb/camera-raw-plug-supported-cameras.html" 
+target=_blank daa-lh="2" daa-ll="Камеры, поддерживаемые в Camera Raw" 
+daa-level="4">Камеры, поддерживаемые в Camera Raw</A>.</P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<H1 id=about_camera_raw 
+style="BOX-SIZING: border-box; FONT-SIZE: 32px; BORDER-TOP: rgb(221,221,221) 1px solid; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 400; PADDING-BOTTOM: 0px; PADDING-TOP: 20px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 32px 0px 20px; LINE-HEIGHT: 1em; PADDING-RIGHT: 0px; border-image: initial">Сведения 
+об Adobe Camera Raw</H1></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Camera 
+Raw встроен в Adobe After&nbsp;Effects® и Adobe Photoshop в качестве плагина. 
+Camera Raw также расширяет функциональные возможности Adobe&nbsp;Bridge. Camera 
+Raw дает возможность использовать каждое из этих приложений для импорта и работы 
+с файлами необработанных снимков. Camera Raw можно также применять для работы с 
+файлами TIFF и JPEG.</P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class=helpx-note 
+style="BOX-SIZING: border-box; BORDER-TOP: rgb(112,112,112) 2px solid; BORDER-RIGHT: rgb(112,112,112) 2px solid; BORDER-BOTTOM: rgb(112,112,112) 2px solid; COLOR: rgb(112,112,112); PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 20px; BORDER-LEFT: rgb(112,112,112) 2px solid; MARGIN: 20px 0px; PADDING-RIGHT: 20px; border-radius: 4px">
+<DIV class=note-header 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; DISPLAY: flex; justify-content: space-between; align-items: center"><SPAN 
+class=note-title 
+style="BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 600; COLOR: rgb(44,44,44); BORDER-LEFT: 0px">Примечание.</SPAN> 
+
+<DIV class=note-icon 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; HEIGHT: 22px; BORDER-RIGHT: 0px; WIDTH: 22px; BACKGROUND: url(data:image/svg+xml,%3Csvg%20id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23707070%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3EArtboard%205%3C%2Ftitle%3E%3Cpath%20id%3D%22_Compound_Path_%22%20data-name%3D%22%26lt%3BCompound%20Path%26gt%3B%22%20class%3D%22cls-1%22%20d%3D%22M9%2C2.12a7%2C7%2C0%2C1%2C0%2C7%2C7A7%2C7%2C0%2C0%2C0%2C9%2C2.12ZM8%2C5.62a.5.5%2C0%2C0%2C1%2C.5-.5h1a.5.5%2C0%2C0%2C1%2C.5.5v1a.5.5%2C0%2C0%2C1-.5.5h-1a.5.5%2C0%2C0%2C1-.5-.5Zm2.42%2C7.5H7.63s-.58%2C0-.58-.5.58-.5.58-.5H8v-3H7.6S7%2C9.11%2C7%2C8.62s.58-.5.58-.5H9.8a.2.2%2C0%2C0%2C1%2C.2.2v3.8h.42s.58%2C0%2C.58.5S10.42%2C13.12%2C10.42%2C13.12Z%22%2F%3E%3C%2Fsvg%3E); BORDER-BOTTOM: 0px; FLOAT: right; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 10px; BORDER-LEFT: 0px; PADDING-RIGHT: 10px"></DIV></DIV>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 400; FONT-STYLE: normal !important; BORDER-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: 1.5; overflow-wrap: break-word">Camera 
+Raw поддерживает изображения с разрешением до 65&nbsp;000&nbsp;пикселей (в длину 
+или ширину) и размером до 512&nbsp;мегапикселей. Camera Raw преобразует 
+изображения палитры CMYK в формат RGB при их открытии. Список поддерживаемых 
+камер см. в разделе&nbsp;<SPAN>&nbsp;</SPAN><A 
+style="BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; COLOR: rgb(20,115,230); BORDER-LEFT: 0px; BACKGROUND-COLOR: transparent" 
+href="https://www.adobe.com/go/learn_ps_cameraraw_ru" daa-lh="3" 
+daa-ll="Поддержка файлов необработанных цифровых фотоснимков" 
+daa-level="4">Поддержка файлов необработанных цифровых 
+фотоснимков</A>.</P></DIV></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Для 
+открытия файлов в диалоговом окне «Camera Raw» Adobe Bridge требуется 
+установленный Photoshop или<SPAN>&nbsp;</SPAN><SPAN class=uicontrol 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">After 
+Effects</SPAN>. Если же Photoshop и<SPAN>&nbsp;</SPAN><SPAN class=uicontrol 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">After 
+Effects</SPAN><SPAN>&nbsp;</SPAN>не установлены, предварительный просмотр 
+изображений и их метаданных все же возможен в Adobe Bridge. Если с определенным 
+типом файла изображения связано другое приложение, то файл можно открыть в этом 
+приложении непосредственно из Adobe Bridge.</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Программа 
+Adobe Bridge дает возможность применять, копировать и удалять настройки 
+изображений, а также выводить изображения предварительного просмотра и 
+метаданные, относящиеся к файлам необработанных снимков, не открывая эти файлы в 
+диалоговом окне «Camera Raw». Изображение предварительного просмотра в программе 
+Adobe Bridge&nbsp;— это изображение JPEG, созданное с использованием текущих 
+настроек изображения. Такие изображения следует отличать от необработанных 
+данных камеры, которые выглядят как очень темное изображение в градациях 
+серого.</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><EM 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px"><STRONG 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Примечание.</STRONG><SPAN>&nbsp;</SPAN>Значок 
+предостережения&nbsp;<IMG 
+style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+src="https://helpx.adobe.com/content/dam/help/icons/P_Warning_Wi_R.png">, 
+отображаемый на миниатюрах и изображениях предварительного просмотра в 
+диалоговом окне «Camera Raw», указывает, что они созданы на основе изображений 
+необработанных снимков.</EM></P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Можно 
+изменять заданные по умолчанию настройки Camera Raw для определенных моделей 
+камер. Для каждой модели камеры можно также изменять заданные по умолчанию 
+значения конкретных настроек ISO или настроек отдельной камеры (по серийному 
+номеру). Настройки изображения можно изменять и сохранять в виде стилей для 
+последующего применения к другим изображениям.</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">При 
+использовании Camera Raw для внесения в изображение необработанного снимка 
+корректировок (включая выпрямление и кадрирование) исходные данные 
+необработанного снимка остаются неизменными. Корректировки сохраняются либо в 
+базе данных Camera Raw в виде метаданных, внедренных в файл изображения, либо 
+в&nbsp;<SPAN>&nbsp;</SPAN><EM 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px">сопроводительном</EM><SPAN>&nbsp;</SPAN>файле 
+XMP (файле метаданных, который прилагается к файлу необработанного снимка). Для 
+получения дополнительной информации см. раздел<SPAN>&nbsp;</SPAN><A 
+style="BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; COLOR: rgb(20,115,230); BORDER-LEFT: 0px; BACKGROUND-COLOR: transparent" 
+href="https://helpx.adobe.com/ru/camera-raw/using/camera-raw-settings.html#main-pars_heading_2" 
+target=_blank daa-lh="4" daa-ll="Определение места хранения настроек Camera Raw" 
+daa-level="4">Определение места хранения настроек Camera Raw</A>.</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">После 
+обработки и редактирования файла RAW с помощью внешнего модуля Camera Raw на 
+миниатюре изображения в программе Adobe Bridge появляется значок&nbsp;<IMG 
+style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+src="https://helpx.adobe.com/content/dam/help/icons/raw_bridge.png">.</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">После 
+открытия файла необработанного снимка в программе Photoshop можно сохранить 
+полученное изображение в других форматах, таких как PSD, JPEG, Large Document 
+Format (PSB), TIFF, Cineon, Photoshop Raw, PNG или PBM. Используя диалоговое 
+окно «Camera Raw» программы Photoshop, можно сохранить обработанные файлы в 
+форматах Digital Negative (DNG), JPEG, TIFF или Photoshop (PSD). 
+Photoshop&nbsp;<SPAN>&nbsp;</SPAN><SPAN class=uicontrol 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">Camera 
+Raw</SPAN><SPAN>&nbsp;</SPAN>позволяет открывать и редактировать файл 
+необработанных снимков, но не дает возможности сохранить изображение в формате 
+необработанного снимка.</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">При 
+выпуске новых версий Camera Raw приложение можно обновлять, устанавливая новую 
+версию внешнего модуля. Проверку наличия обновлений ПО Adobe можно выполнить, 
+выбрав пункт меню «Справка» &gt; «Обновления».</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Различные 
+модели камер сохраняют изображения необработанных снимков в разных форматах, 
+соответственно, полученные данные требуют интерпретации с учетом этих форматов. 
+Camera Raw включает профили для многих моделей камер и позволяет 
+интерпретировать большое количество форматов необработанных 
+снимков.</P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class=helpx-note 
+style="BOX-SIZING: border-box; BORDER-TOP: rgb(112,112,112) 2px solid; BORDER-RIGHT: rgb(112,112,112) 2px solid; BORDER-BOTTOM: rgb(112,112,112) 2px solid; COLOR: rgb(112,112,112); PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 20px; BORDER-LEFT: rgb(112,112,112) 2px solid; MARGIN: 20px 0px; PADDING-RIGHT: 20px; border-radius: 4px">
+<DIV class=note-header 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; DISPLAY: flex; justify-content: space-between; align-items: center"><SPAN 
+class=note-title 
+style="BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 600; COLOR: rgb(44,44,44); BORDER-LEFT: 0px">Примечание.</SPAN> 
+
+<DIV class=note-icon 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; HEIGHT: 22px; BORDER-RIGHT: 0px; WIDTH: 22px; BACKGROUND: url(data:image/svg+xml,%3Csvg%20id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23707070%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3EArtboard%205%3C%2Ftitle%3E%3Cpath%20id%3D%22_Compound_Path_%22%20data-name%3D%22%26lt%3BCompound%20Path%26gt%3B%22%20class%3D%22cls-1%22%20d%3D%22M9%2C2.12a7%2C7%2C0%2C1%2C0%2C7%2C7A7%2C7%2C0%2C0%2C0%2C9%2C2.12ZM8%2C5.62a.5.5%2C0%2C0%2C1%2C.5-.5h1a.5.5%2C0%2C0%2C1%2C.5.5v1a.5.5%2C0%2C0%2C1-.5.5h-1a.5.5%2C0%2C0%2C1-.5-.5Zm2.42%2C7.5H7.63s-.58%2C0-.58-.5.58-.5.58-.5H8v-3H7.6S7%2C9.11%2C7%2C8.62s.58-.5.58-.5H9.8a.2.2%2C0%2C0%2C1%2C.2.2v3.8h.42s.58%2C0%2C.58.5S10.42%2C13.12%2C10.42%2C13.12Z%22%2F%3E%3C%2Fsvg%3E); BORDER-BOTTOM: 0px; FLOAT: right; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 10px; BORDER-LEFT: 0px; PADDING-RIGHT: 10px"></DIV></DIV>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 400; FONT-STYLE: normal !important; BORDER-LEFT: 0px; MARGIN: 10px 0px; LINE-HEIGHT: 1.5; overflow-wrap: break-word">В 
+случае проблем при открытии файлов Camera Raw см. статью<SPAN>&nbsp;</SPAN><A 
+style="BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; COLOR: rgb(20,115,230); BORDER-LEFT: 0px; BACKGROUND-COLOR: transparent" 
+href="https://blogs.adobe.com/crawlspace/2011/03/why-doesnt-my-version-of-photoshop-or-lightroom-support-my-camera.html" 
+daa-lh="5" 
+daa-ll="Почему моя версия Photoshop или Lightroom не поддерживает используемую камеру?" 
+daa-level="4">Почему моя версия Photoshop или Lightroom не поддерживает 
+используемую камеру?</A></P></DIV></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<H1 id=about_the_digital_negative_dng_format 
+style="BOX-SIZING: border-box; FONT-SIZE: 32px; BORDER-TOP: rgb(221,221,221) 1px solid; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 400; PADDING-BOTTOM: 0px; PADDING-TOP: 20px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 32px 0px 20px; LINE-HEIGHT: 1em; PADDING-RIGHT: 0px; border-image: initial">Сведения 
+о формате Digital Negative (DNG)</H1></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Формат 
+Digital Negative (DNG)&nbsp;— это не ограниченный правами собственности, 
+описанный в открытой документации и широко поддерживаемый формат хранения 
+необработанных данных камеры. Разработчики аппаратных и программных средств 
+широко используют формат DNG, поскольку с его помощью может быть организован 
+гибкий рабочий процесс обработки и архивирования данных необработанного снимка. 
+Формат DNG может также использоваться в качестве промежуточного формата для 
+хранения изображений, которые были первоначально сняты с использованием 
+собственного формата производителя камеры.</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Поскольку 
+метаданные DNG описаны в общедоступной документации, такие программы чтения, как 
+Camera Raw, не требуют наличия сведений, относящихся к определенной камере, для 
+декодирования и обработки файлов, созданных камерой, которая поддерживает формат 
+DNG. Если же поддержка собственного формата камеры будет прекращена, то 
+пользователи могут утратить возможность получения доступа к изображениям, 
+хранящимся в этом формате, а это приведет к потере изображений без возможности 
+восстановления. В то же время, так как формат DNG описан в общедоступной 
+документации, весьма велика вероятность того, что необработанные изображения, 
+хранящиеся в виде файлов DNG, останутся доступными для чтения программным 
+обеспечением и в отдаленном будущем, что характеризует формат DNG как более 
+безопасный для архивного хранения.</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Метаданные, 
+относящиеся к корректировкам изображений, которые хранятся в виде файлов DNG, 
+могут быть внедрены непосредственно в файл DNG, а не представлены в 
+сопроводительном файле XMP или в базе данных Camera Raw.</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Файлы 
+необработанных снимков можно преобразовать в формат DNG с 
+помощью<SPAN>&nbsp;</SPAN><SPAN class=uicontrol 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">Adobe 
+DNG Converter</SPAN><SPAN>&nbsp;</SPAN>или в диалоговом окне «Camera Raw». 
+Дополнительную информацию о формате DNG и программе<SPAN>&nbsp;</SPAN><SPAN 
+class=uicontrol 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">DNG 
+Converter</SPAN><SPAN>&nbsp;</SPAN>см. на странице продукта<SPAN>&nbsp;</SPAN><A 
+style="BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; COLOR: rgb(20,115,230); BORDER-LEFT: 0px; BACKGROUND-COLOR: transparent" 
+href="https://www.adobe.com/go/learn_ps_dng_ru" daa-lh="6" 
+daa-ll="Digital Negative (DNG)" daa-level="4">Digital Negative (DNG)</A>. Для 
+загрузки последней версии<SPAN>&nbsp;</SPAN><SPAN class=uicontrol 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">DNG 
+Converter</SPAN><SPAN>&nbsp;</SPAN>перейдите на страницу<SPAN>&nbsp;</SPAN><A 
+style="BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; COLOR: rgb(20,115,230); BORDER-LEFT: 0px; BACKGROUND-COLOR: transparent" 
+href="https://www.adobe.com/ru/downloads/updates.html" target=_blank daa-lh="7" 
+daa-ll="Загрузки Adobe" daa-level="4">Загрузки Adobe</A>.</P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<H1 id=processing_images_with_camera_raw 
+style="BOX-SIZING: border-box; FONT-SIZE: 32px; BORDER-TOP: rgb(221,221,221) 1px solid; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 400; PADDING-BOTTOM: 0px; PADDING-TOP: 20px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 32px 0px 20px; LINE-HEIGHT: 1em; PADDING-RIGHT: 0px; border-image: initial">Обработка 
+изображений с помощью Camera Raw</H1></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><B 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Копирование 
+файлов необработанных снимков на жесткий диск, упорядочение и преобразование 
+(при необходимости) в формат DNG</B></P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Прежде 
+чем приступать к любой работе над изображениями, представленными в файлах 
+необработанного снимка, необходимо переписать файлы изображений из карты памяти 
+камеры, упорядочить их, присвоить удобные имена и провести другие 
+подготовительные действия. С помощью команды&nbsp;<SPAN>&nbsp;</SPAN><SPAN 
+class=uicontrol 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">«Получить 
+фотографии с камеры»</SPAN><SPAN>&nbsp;</SPAN>в приложении Adobe Bridge эти 
+задачи могут выполняться автоматически.</P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><B 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Открытие 
+файлов изображения в Camera Raw</B></P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Файлы 
+RAW можно открыть в Camera Raw из приложения Adobe Bridge, After Effects или 
+Photoshop. Также в Camera Raw с помощью программы Adobe Bridge можно открыть 
+файлы JPEG и TIFF.</P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><B 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Корректировка 
+цвета</B></P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">К 
+корректировкам цвета относится корректировка баланса белого, тона и 
+насыщенности. Большинство корректировок можно выполнить на вкладке «Основные», а 
+затем воспользоваться элементами управления на других вкладках для точной 
+настройки результатов. Если необходимо проанализировать изображение и применить 
+приближенные корректировки тона в Camera Raw, нажмите кнопку «Авто» на вкладке 
+«Основные».</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Чтобы 
+применить настройки, которые использовались для предыдущего изображения или 
+применить заданные по умолчанию настройки, относящиеся к определенным моделям 
+камер, определенной камере или настройкам ISO, выберите соответствующую команду 
+в меню<SPAN>&nbsp;</SPAN><SPAN class=uicontrol 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">Настройки 
+Camera Raw</SPAN>&nbsp;<IMG 
+style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+src="https://helpx.adobe.com/content/dam/help/icons/Camera_Raw_Set.png">. (См. 
+раздел<SPAN>&nbsp;</SPAN><A 
+style="BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; COLOR: rgb(20,115,230); BORDER-LEFT: 0px; BACKGROUND-COLOR: transparent" 
+href="https://helpx.adobe.com/ru/camera-raw/using/camera-raw-settings.html" 
+daa-lh="8" daa-ll="Применение сохраненных настроек Camera Raw" 
+daa-level="4">Применение сохраненных настроек Camera Raw</A>.)</P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Подробнее 
+о том, как выполнять обратимую цветокоррекцию и вносить другие изменения в 
+фотографии в Camera Raw, вы узнаете из видеоруководства<SPAN>&nbsp;</SPAN><A 
+style="BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; COLOR: rgb(20,115,230); BORDER-LEFT: 0px; BACKGROUND-COLOR: transparent" 
+href="https://helpx.adobe.com/ru/photoshop/how-to/make-non-destructive-edits-camera-raw.html" 
+daa-lh="9" daa-ll="Обратимое редактирование в Camera Raw" 
+daa-level="4">Обратимое редактирование в Camera Raw</A>.</P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><B 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Внесение 
+других корректировок и исправлений в изображение</B></P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Воспользуйтесь 
+другими инструментами и элементами управления в диалоговом окне «Camera Raw», 
+чтобы выполнить регулировку резкости изображения, уменьшение шума, коррекцию 
+дисторсии и ретуширование.</P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><B 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">(Необязательно) 
+Сохранение параметров изображения в виде стиля или в качестве применяемых по 
+умолчанию настроек изображения</B></P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Чтобы 
+иметь возможность применения в дальнейшем тех же корректировок к другим 
+изображениям, сохраните настройки в виде стиля. Чтобы сохранить выполненные 
+корректировки в качестве значений, которые будут применяться по умолчанию ко 
+всем изображениям, полученным с помощью определенной модели камеры, конкретной 
+камеры или настроек ISO, сохраните настройки изображения в виде новых значений 
+по умолчанию Camera Raw. (См.<SPAN>&nbsp;</SPAN><A 
+style="BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; COLOR: rgb(20,115,230); BORDER-LEFT: 0px; BACKGROUND-COLOR: transparent" 
+href="https://helpx.adobe.com/ru/camera-raw/using/camera-raw-settings.html" 
+daa-lh="10" daa-ll="Сохранение, восстановление и загрузка настроек Camera Raw" 
+daa-level="4">Сохранение, восстановление и загрузка настроек Camera 
+Raw</A>.)</P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><B 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Установка 
+параметров управления файлами для программы Photoshop</B></P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Установите 
+параметры, чтобы задать способы сохранения изображений с помощью внешнего модуля 
+Camera Raw и открытия этих изображений программой Photoshop. Перейти к 
+настройкам группы<SPAN>&nbsp;</SPAN><SPAN class=uicontrol 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">Управление 
+файлами</SPAN><SPAN>&nbsp;</SPAN>можно, щелкнув по ссылке, расположенной под 
+изображением предварительного просмотра в диалоговом окне «Camera 
+Raw».</P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><B 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Сохраните 
+изображение или откройте его в приложении Photoshop или After 
+Effects.</B></P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">После 
+завершения корректировки изображения в Camera Raw можно продолжить работу одним 
+из следующих способов: применить корректировки к файлу необработанного снимка, 
+открыть откорректированное изображение в Photoshop или в<SPAN>&nbsp;</SPAN><SPAN 
+class=uicontrol 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">After 
+Effects</SPAN>, сохранить откорректированное изображение в другом формате или 
+отменить корректировки. Если диалоговое окно «Camera Raw» открывается из 
+программы<SPAN>&nbsp;</SPAN><SPAN class=uicontrol 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">After 
+Effects</SPAN>, кнопки<SPAN>&nbsp;</SPAN><SPAN class=uicontrol 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">Сохранить 
+изображение</SPAN><SPAN>&nbsp;</SPAN>и «Готово» становятся 
+недоступны.</P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<UL 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 24px; BORDER-LEFT: 0px; MARGIN: 10px 0px 15px; margin-block: 0px; margin-inline: 0px">
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Сохранить 
+  изображение</STRONG><SPAN>&nbsp;</SPAN>Настройки Camera Raw применяются к 
+  изображениям, после чего сохраняются копии изображений в формате JPEG, PSD, 
+  TIFF или DNG. Нажмите клавишу Alt (Windows) или Option (Mac OS), чтобы 
+  диалоговое окно<SPAN>&nbsp;</SPAN><SPAN class=uicontrol 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">Параметры 
+  сохранения Camera Raw</SPAN><SPAN>&nbsp;</SPAN>не отображалось, а файлы 
+  сохранялись в соответствии с последними заданными параметрами сохранения. (См. 
+  раздел<SPAN>&nbsp;</SPAN><A 
+  style="BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; COLOR: rgb(20,115,230); BORDER-LEFT: 0px; BACKGROUND-COLOR: transparent" 
+  href="https://helpx.adobe.com/ru/camera-raw/using/navigate-open-save-images-camera.html#main-pars_heading_3" 
+  target=_blank daa-lh="11" 
+  daa-ll="Сохранение изображения необработанного снимка в другом формате" 
+  daa-level="4">Сохранение изображения необработанного снимка в другом 
+  формате</A>.) 
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">«Открыть 
+  изображение» или «ОК»</STRONG><SPAN>&nbsp;</SPAN>Копии файлов изображений в 
+  формате необработанных снимков открываются в программе Photoshop 
+  или<SPAN>&nbsp;</SPAN><SPAN class=uicontrol 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">After 
+  Effects</SPAN><SPAN>&nbsp;</SPAN>(с примененными настройками Camera Raw). 
+  Исходный файл изображения в формате необработанного снимка остается 
+  неизменным. Нажмите кнопку &nbsp;<SPAN class=uicontrol 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">Открыть 
+  изображение</SPAN>, удерживая клавишу Shift, чтобы открыть необработанный файл 
+  в программе Photoshop как смарт-объект. Чтобы задать настройки Camera Raw, в 
+  любой момент дважды щелкните левой кнопкой мыши слой смарт-объекта, который 
+  содержит файл необработанного снимка. 
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Готово</STRONG><SPAN>&nbsp;</SPAN>Диалоговое 
+  окно «Camera Raw» закрывается, настройки файла сохраняются в файле базы данных 
+  необработанных снимков, в сопроводительном файле XMP или в файле DNG. 
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Отмена</STRONG><SPAN>&nbsp;</SPAN>Отменяются 
+  изменения, указанные в диалоговом окне «Camera Raw».</LI></UL></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<H1 id=camera_raw_dialog_box_overview 
+style="BOX-SIZING: border-box; FONT-SIZE: 32px; BORDER-TOP: rgb(221,221,221) 1px solid; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 400; PADDING-BOTTOM: 0px; PADDING-TOP: 20px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 32px 0px 20px; LINE-HEIGHT: 1em; PADDING-RIGHT: 0px; border-image: initial">Обзор 
+диалогового окна «Camera Raw»</H1></DIV></DIV>
+<DIV class="image parbase aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV title="Диалоговое окно «Camera Raw»" class=image-wrapper 
+style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; MARGIN-TOP: 10px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; DISPLAY: inline-block">
+<DIV 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px"><FIGURE 
+class="dexter-Image  dexter-Image-left  " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; TEXT-ALIGN: left; BORDER-LEFT: 0px; MARGIN: 0px; DISPLAY: block; margin-block: 0px; margin-inline: 0px">
+<DIV class=dexter-Image-reactTooltipContainer 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; POSITION: absolute; BORDER-LEFT: 0px; DISPLAY: inline-block" 
+data-tooltip="Диалоговое окно «Camera Raw»">
+<DIV 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; HEIGHT: 0px; BORDER-RIGHT: 0px; WIDTH: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px"></DIV></DIV><IMG 
+id=root_content_flex_items_position_position-par_image_0 
+style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: top; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+alt="Adobe Camera Raw" 
+src="https://helpx.adobe.com/content/dam/help/ru/camera-raw/using/introduction-camera-raw/jcr_content/main-pars/image_0/adobe_camera_raw.png.img.png"><FIGCAPTION 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; MARGIN-TOP: 8px; BORDER-BOTTOM: 0px; FONT-STYLE: italic; BORDER-LEFT: 0px; DISPLAY: block">Диалоговое 
+окно «Camera Raw»</FIGCAPTION></FIGURE></DIV>
+<P class=callouts 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"></P></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class=helpx-note 
+style="BOX-SIZING: border-box; BORDER-TOP: rgb(112,112,112) 2px solid; BORDER-RIGHT: rgb(112,112,112) 2px solid; BORDER-BOTTOM: rgb(112,112,112) 2px solid; COLOR: rgb(112,112,112); PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 20px; BORDER-LEFT: rgb(112,112,112) 2px solid; MARGIN: 20px 0px; PADDING-RIGHT: 20px; border-radius: 4px">
+<DIV class=note-header 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; DISPLAY: flex; justify-content: space-between; align-items: center"><SPAN 
+class=note-title 
+style="BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 600; COLOR: rgb(44,44,44); BORDER-LEFT: 0px">Примечание.</SPAN> 
+
+<DIV class=note-icon 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; HEIGHT: 22px; BORDER-RIGHT: 0px; WIDTH: 22px; BACKGROUND: url(data:image/svg+xml,%3Csvg%20id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23707070%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3EArtboard%205%3C%2Ftitle%3E%3Cpath%20id%3D%22_Compound_Path_%22%20data-name%3D%22%26lt%3BCompound%20Path%26gt%3B%22%20class%3D%22cls-1%22%20d%3D%22M9%2C2.12a7%2C7%2C0%2C1%2C0%2C7%2C7A7%2C7%2C0%2C0%2C0%2C9%2C2.12ZM8%2C5.62a.5.5%2C0%2C0%2C1%2C.5-.5h1a.5.5%2C0%2C0%2C1%2C.5.5v1a.5.5%2C0%2C0%2C1-.5.5h-1a.5.5%2C0%2C0%2C1-.5-.5Zm2.42%2C7.5H7.63s-.58%2C0-.58-.5.58-.5.58-.5H8v-3H7.6S7%2C9.11%2C7%2C8.62s.58-.5.58-.5H9.8a.2.2%2C0%2C0%2C1%2C.2.2v3.8h.42s.58%2C0%2C.58.5S10.42%2C13.12%2C10.42%2C13.12Z%22%2F%3E%3C%2Fsvg%3E); BORDER-BOTTOM: 0px; FLOAT: right; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 10px; BORDER-LEFT: 0px; PADDING-RIGHT: 10px"></DIV></DIV>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<UL 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 24px; BORDER-LEFT: 0px; MARGIN: 10px 0px 15px; margin-block: 0px; margin-inline: 0px">
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 400; FONT-STYLE: normal !important; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; LINE-HEIGHT: 1.5; overflow-wrap: break-word">Некоторые 
+  элементы управления, такие как ссылка на окно<SPAN>&nbsp;</SPAN><SPAN 
+  class=uicontrol 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">Управление 
+  файлами</SPAN>, доступные после открытия диалогового окна «Camera&nbsp;Raw» из 
+  программы Adobe&nbsp;Bridge или Photoshop, недоступны, если диалоговое окно 
+  «Camera&nbsp;Raw» открывается из программы After&nbsp;Effects. 
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 400; FONT-STYLE: normal !important; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; LINE-HEIGHT: 1.5; overflow-wrap: break-word">Дважды 
+  щелкните мышью в области предварительного просмотра изображения при нажатой 
+  клавише Shift, чтобы активировать функции «Автотемпература» и 
+  «Автооттенок».</LI></UL></DIV></DIV></DIV>
+<DIV class="text aem-GridColumn aem-GridColumn--default--12" 
+style='BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; BORDER-RIGHT: 0px; WIDTH: 746px; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; CLEAR: none; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial'>
+<DIV class="cmp-text " 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+daa-lh="In Article|Article body" daa-im="true">
+<UL 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 24px; BORDER-LEFT: 0px; MARGIN: 10px 0px 15px; margin-block: 0px; margin-inline: 0px">
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; overflow-wrap: break-word">
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Откройте 
+  панели редактирования в правой части диалогового окна. К некоторым командам 
+  этого меню также можно получить доступ из меню «Редактирование» 
+  &gt;<SPAN>&nbsp;</SPAN><SPAN class=uicontrol 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">Готовые 
+  настройки</SPAN><SPAN>&nbsp;</SPAN>программы Adobe Bridge.</P></LI></UL>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Элементы 
+управления масштабированием Camera Raw.</P>
+<UL 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 24px; BORDER-LEFT: 0px; MARGIN: 10px 0px 15px; margin-block: 0px; margin-inline: 0px">
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Инструмент 
+  «Масштаб»&nbsp;<IMG 
+  style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+  src="https://helpx.adobe.com/content/dam/help/icons/P_Magnification_Lg_N.png"></STRONG> 
+
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">После 
+  щелчка на изображении предварительного просмотра его масштаб устанавливается 
+  на следующее по величине предустановленное значение. Щелкните, удерживая 
+  клавишу Alt (Windows) или Option (Mac OS), чтобы установить предыдущее по 
+  величине значение масштабирования. Выделите при помощи перетаскивания 
+  инструмента «Масштаб» область в изображении предварительного просмотра, чтобы 
+  увеличить ее масштаб. Чтобы возвратиться к масштабу 100%, дважды щелкните 
+  инструмент «Масштаб».</P>
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Инструмент 
+  «Рука»&nbsp;<IMG 
+  style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+  src="https://helpx.adobe.com/content/dam/help/icons/hand.png"></STRONG> 
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Позволяет 
+  перемещать изображение в окне предварительного просмотра, если для него задан 
+  уровень масштаба больше 100%. Удерживайте клавишу «Пробел», чтобы временно 
+  активизировать инструмент «Рука», не отменяя использование другого 
+  инструмента. Дважды щелкните инструмент «Рука», чтобы подогнать изображение 
+  предварительного просмотра по размерам окна.</P>
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px"><SPAN 
+  class=uicontrol 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">Выбрать 
+  масштаб</SPAN></STRONG> 
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Выберите 
+  значение увеличения в меню или нажмите кнопку<SPAN>&nbsp;</SPAN><SPAN 
+  class=uicontrol 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">Выбрать 
+  масштаб</SPAN>.</P></LI></UL>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><STRONG 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Просмотр</STRONG></P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Позволяет 
+отобразить изображение предварительного просмотра, подготовленное с учетом 
+корректировок, внесенных на текущей вкладке, в сочетании с настройками, которые 
+заданы на других вкладках. Снимите флажок с этого параметра для отображения 
+изображения с учетом исходных настроек текущей вкладки, в сочетании с 
+настройками, которые заданы на других вкладках.</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Начиная 
+с версии Photoshop CC 8.4, в Camera Raw доступны улучшенные функции 
+предварительного просмотра, которые позволяют сравнивать изображение в 
+представлениях «До» и «После»:</P>
+<UL 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 24px; BORDER-LEFT: 0px; MARGIN: 10px 0px 15px; margin-block: 0px; margin-inline: 0px">
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; overflow-wrap: break-word"><IMG 
+  style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+  src="https://helpx.adobe.com/content/dam/help/shared/icons/Photoshop/preview-before.jpg"><SPAN>&nbsp;</SPAN>Сохранение 
+  текущих настроек изображения в представлении «До»<BR 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px"><IMG 
+  style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+  src="https://helpx.adobe.com/content/dam/help/shared/icons/Photoshop/preview-swap.jpg"><SPAN>&nbsp;</SPAN>Переключение 
+  между текущими настройками и настройками в представлении «До». Текущие 
+  настройки сохраняются в представлении «До», к изображению применяются 
+  настройки в представлении «До».<BR 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px"><IMG 
+  style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+  src="https://helpx.adobe.com/content/dam/help/shared/icons/Photoshop/preview-layout%20copy.jpg">Выбор 
+  режима отображения предварительного просмотра<BR 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px">
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; overflow-wrap: break-word">Отображение 
+  только в представлении «После» с уже внесенными изменениями 
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; overflow-wrap: break-word">Настройки 
+  «До»/«После» применяются к левой и правой частям изображения соответственно 
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; overflow-wrap: break-word">Настройки 
+  «До»/«После» применяются ко всему изображению, представления отображаются 
+  параллельно 
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; overflow-wrap: break-word">Настройки 
+  «До»/«После» применяются к верхней и нижней частям изображения соответственно 
+  <LI 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 2px; BORDER-LEFT: 0px; MARGIN: 6px 0px; overflow-wrap: break-word">Настройки 
+  «До»/«После» применяются ко всему изображению и отображаются вертикально для 
+  быстрого и удобного сравнения</LI></UL>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><STRONG 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">RGB</STRONG></P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Показывает 
+значения красного, зеленого и синего компонентов цвета для пиксела, на который 
+наведен курсор, в изображении предварительного просмотра.</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><STRONG 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Тени 
+и cвета</STRONG></P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Отображает 
+потери теней и светов с помощью кнопок в верхней части панели «Гистограмма». 
+Участки потери теней обозначаются синим цветом, света&nbsp;— красным цветом. 
+Потери светов отображаются, если происходят потери в любом из трех каналов RGB 
+(полностью насыщенный цвет без деталей). Потери теней отображаются, если 
+происходят потери во всех трех каналах RGB (черный цвет без деталей).</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">&nbsp;</P>
+<P 
+style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Вкладки 
+настройки изображения Camera Raw.</P>
+<UL 
+style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-LEFT: 24px; BORDER-LEFT: 0px; MARGIN: 10px 0px 15px; margin-block: 0px; margin-inline: 0px"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Основные&nbsp;<IMG 
+  style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+  src="https://helpx.adobe.com/content/dam/help/icons/P_Tab_Basic_Sm_N.png"></STRONG> 
+
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Позволяет 
+  корректировать баланс белого, насыщенность цвета и тональность.</P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px"><SPAN 
+  class=uicontrol 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">Тоновая 
+  кривая</SPAN>&nbsp;<IMG 
+  style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+  src="https://helpx.adobe.com/content/dam/help/icons/P_Tab_ToneCurve_Sm_N.png"></STRONG></P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Обеспечивает 
+  точную настройку тона с использованием параметрической кривой и точечной 
+  кривой.</P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Детализация&nbsp;<IMG 
+  style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+  src="https://helpx.adobe.com/content/dam/help/icons/P_Tab_Detail_Sm_N.png"></STRONG></P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Позволяет 
+  отрегулировать резкость изображения или уменьшить шум.</P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">HSL 
+  / Градации серого&nbsp;<IMG 
+  style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+  src="https://helpx.adobe.com/content/dam/help/icons/P_Tab_Mixer_Sm_N.png"></STRONG></P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Обеспечивает 
+  тонкую настройку цветов с использованием корректировок «Цветовой тон», 
+  «Насыщенность» и «Светимость».</P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px"><SPAN 
+  class=uicontrol 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">Разбиение 
+  тонов</SPAN>&nbsp;<IMG 
+  style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+  src="https://helpx.adobe.com/content/dam/help/icons/P_Tab_SplitTone_Sm_N.png"></STRONG></P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Позволяет 
+  преобразовывать монохромные изображения в цветные или применять специальные 
+  эффекты к цветным изображениям.</P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px"><SPAN 
+  class=uicontrol 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">Коррекция 
+  дисторсии</SPAN>&nbsp;<IMG 
+  style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+  src="https://helpx.adobe.com/content/dam/help/icons/P_Tab_LensCorrect_Sm_N.png"></STRONG></P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Применяется 
+  для компенсации хроматической аберрации, геометрических искажений и 
+  виньетирования, вызванных объективом камеры.</P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Эффекты&nbsp;<IMG 
+  style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+  src="https://helpx.adobe.com/content/dam/help/icons/cr_effects.png"></STRONG></P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Имитация 
+  зернистости фотопленки или виньетирование после кадрирования.</P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px"><SPAN 
+  class=uicontrol 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: 700; BORDER-LEFT: 0px">Калибровка 
+  камеры</SPAN>&nbsp;<IMG 
+  style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+  src="https://helpx.adobe.com/content/dam/help/icons/P_Tab_CameraCalibration_Sm_N.png"></STRONG></P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Позволяет 
+  применить профили камеры к изображениям необработанных снимков для устранения 
+  ошибок цветопередачи и корректировки цветов, отличных от нейтральных, в целях 
+  компенсации поведения фотосенсора цифровой камеры.</P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Наборы&nbsp;<IMG 
+  style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+  src="https://helpx.adobe.com/content/dam/help/icons/P_Tab_Presets_Sm_N.png"></STRONG></P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Обеспечивает 
+  сохранение и применение стилей корректировки изображения.</P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word"><STRONG 
+  style="BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; FONT-WEIGHT: bolder; BORDER-LEFT: 0px">Снимки 
+  экрана&nbsp;<IMG 
+  style="BOX-SIZING: border-box; MAX-WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px; WIDTH: auto; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" 
+  src="https://helpx.adobe.com/content/dam/help/icons/cr_snapshots.png"></STRONG></P>
+  <P 
+  style="BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px; overflow-wrap: break-word">Позволяет 
+  создавать версии фотографии для фиксации ее состояния в отдельные моменты 
+  процесса редактирования.</P></UL></DIV></DIV>
+
+				</div>
+			</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				<li>
+					<h2></h2>
+					<p></p>
+				</li>
+				<li>
+					<h2>Содержание</h2>
+					<ul>
+					<li><a style="" href="index.html">Главная</a></li>
+<li><a style="" href="page17.html">Глава 1. Введение в Photoshop</a></li>
+<li><a style="" href="page1.html">1.1. Основные сведения о рабочей среде</a></li>
+<li><a style="" href="page2.html">1.2. Создание документа</a></li>
+<li><a style="" href="page3.html">1.3. Использование монтажных областей в Adobe Photoshop</a></li>
+<li><a style="" href="page4.html">1.4. Работа с растровыми и векторными изображениями</a></li>
+<li><a style="" href="page5.html">1.5. Растровые и векторные изображения</a></li>
+<li><a style="" href="page6.html">1.6. Рисование и редактирование фигур</a></li>
+<li><a style="" href="page7.html">1.7. Цветовые режимы</a></li>
+<li><a style="" href="page8.html">1.8. Форматы файла</a></li>
+<li><a style="" href="page9.html">1.9. HDR-изображения</a></li>
+<li><a style="" href="page10.html">1.10. Основные сведения о слоях</a></li>
+<li><a style="" href="page11.html">1.11. Деформация перспективы</a></li>
+<li><a style="" href="page12.html">1.12. Примеры использования инструмента " Восстанавливающая кисть".</a></li>
+<li><a style="" href="page13.html">1.13. Корректировка резкости и размытия изображения</a></li>
+<li><a style="" href="page14.html">1.14. О цветокоррекции</a></li>
+<li class="active"><a style="" href="page15.html">1.15. Введение в CameraRaw</a></li>
+<li><a style="" href="page16.html">1.16. Трансформирование изображений,фигур и контуров</a></li>
+<li><a style="" href="page18.html">Глава 2. Что такое GIMP и зачем он нужен</a></li>
+<li><a style="" href="page19.html">2.1. Версии,лиценцзии,информационные ресурсы</a></li>
+<li><a style="" href="page20.html">2.2. Работа с цифровыми фотографиями</a></li>
+<li><a style="" href="page21.html">2.3. Настройка GIMP</a></li>
+<li><a style="" href="page22.html">2.4. Форматы файлов: входные,выходные,внутренние</a></li>
+<li><a style="" href="page23.html">2.5. Тексты в GIMP</a></li>
+<li><a style="" href="page24.html">2.6. Создание изображения из примитивов</a></li>
+<li><a style="" href="page25.html">2.7. Контуры в GIMP</a></li>
+<li><a style="" href="page26.html">Тест 1 по главе 1 (основы)</a></li>
+<li><a style="" href="page27.html">Тест 2  по главе 1 (функционал)</a></li>
+
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	<!-- end #page -->
+	<div id="footer-bgcontent">
+	<div id="footer">
+		<p>Автор: Байков Э.А. | <a href="http://www.freecsstemplates.org/">Free CSS Templates</a> | <a href="http://brullworfel.ru/turbosite">TurboSite</a></p>
+	</div>
+	</div>
+	<!-- end #footer -->
+</div>
+</body>
+</html>

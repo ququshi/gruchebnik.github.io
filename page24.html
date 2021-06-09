@@ -1,0 +1,708 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>2.6. Создание изображения из примитивов - Графические редакторы</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+<meta name="generator" content="TurboSite 1.7.1" />
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="logo">
+		<h1>Графические редакторы</h1>
+		<p><em>Учебное пособие</em></p>
+	</div>
+	<hr />
+	<!-- end #logo -->
+	<div id="header">
+		<div id="menu">
+			<ul>
+				<li><a style="" href="index.html">Главная</a></li>
+
+			</ul>
+		</div>
+		<!-- end #menu -->
+	</div>
+	<!-- end #header -->
+	<!-- end #header-wrapper -->
+	<div id="page">
+	<div id="page-bgtop">
+		<div id="content">
+			<div class="post">
+				<h2 class="title">2.6. Создание изображения из примитивов</h2>
+				<div class="entry">
+					
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 5.15pt 8.25pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>GIMP<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>не<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN>имеет<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN>очевидных<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>инструментов<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>для<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN>рисования<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN>графических<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>при-<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>митивов, 
+но это не значит, что он их не имеет совсем. Существует по меньшей<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN><SPAN 
+style="mso-font-width: 95%">мере<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN>три<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN>способа<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>создания<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>правильных<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>геометрических<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>фигур:<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>использование<SPAN 
+style="LETTER-SPACING: -2.15pt"> </SPAN>возможностей стандартных инструментов 
+рисования, использование обводки по<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN></SPAN>выделению<SPAN style="LETTER-SPACING: 0.15pt"> </SPAN>и<SPAN 
+style="LETTER-SPACING: 0.2pt"> </SPAN>использование<SPAN 
+style="LETTER-SPACING: 0.15pt"> </SPAN>встроенного<SPAN 
+style="LETTER-SPACING: 0.2pt"> </SPAN>векторного<SPAN 
+style="LETTER-SPACING: 0.15pt"> </SPAN>редактора<SPAN 
+style="LETTER-SPACING: 0.2pt"> </SPAN>Gfig.<?xml:namespace prefix = "o" ns = 
+"urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0cm 8.25pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>При 
+выборе стандартных инструментов рисования («Кисти» </SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>или 
+«Каранда-<SPAN style="LETTER-SPACING: -3pt"> </SPAN><SPAN 
+style="LETTER-SPACING: -0.05pt">ша») можно </SPAN>воспользоваться «Советами дняc 
+GIMP, которые в любой момент<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN>могут 
+быть вызваны из пункта «Справка» главного меню пакета («Справка /<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN><SPAN 
+style="mso-font-width: 95%">Совет<SPAN style="LETTER-SPACING: 1.15pt"> 
+</SPAN>дня»).<SPAN style="LETTER-SPACING: 1.8pt"> </SPAN>Так,<SPAN 
+style="LETTER-SPACING: 1.85pt"> </SPAN>можно<SPAN 
+style="LETTER-SPACING: 1.85pt"> </SPAN>использовать<SPAN 
+style="LETTER-SPACING: 1.8pt"> </SPAN>направляющие<SPAN 
+style="LETTER-SPACING: 1.85pt"> </SPAN>для<SPAN style="LETTER-SPACING: 1.85pt"> 
+</SPAN>точного<SPAN style="LETTER-SPACING: 1.8pt"> 
+</SPAN>позициони-</SPAN><o:p></o:p></SPAN></P>
+<P class=MsoBodyText style="TEXT-ALIGN: right; MARGIN: 0.15pt 8.25pt 0pt 6.55pt" 
+align=right><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>рования</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: 0.35pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>элементов<SPAN 
+style="LETTER-SPACING: 0.35pt"> </SPAN>рисунка<SPAN 
+style="LETTER-SPACING: 0.4pt"> </SPAN>(совет<SPAN 
+style="LETTER-SPACING: 0.35pt"> </SPAN>12),<SPAN style="LETTER-SPACING: 0.35pt"> 
+</SPAN>а<SPAN style="LETTER-SPACING: 0.4pt"> </SPAN>для<SPAN 
+style="LETTER-SPACING: 0.35pt"> </SPAN>рисования<SPAN 
+style="LETTER-SPACING: 0.35pt"> </SPAN>прямых<SPAN 
+style="LETTER-SPACING: 0.4pt"> </SPAN>линий<SPAN style="LETTER-SPACING: 0.35pt"> 
+</SPAN>нужно<SPAN style="LETTER-SPACING: -2.25pt"> </SPAN>следовать совету 10 
+относительно использования клавиш &lt;SHIFT&gt; и &lt;CTRL&gt;.<SPAN 
+style="LETTER-SPACING: -2.3pt"> </SPAN><SPAN 
+style="mso-font-width: 95%">Создадим<SPAN style="LETTER-SPACING: 1.8pt"> 
+</SPAN>новый<SPAN style="LETTER-SPACING: 1.85pt"> </SPAN>рисунок<SPAN 
+style="LETTER-SPACING: 1.85pt"> </SPAN>(«Файл<SPAN 
+style="LETTER-SPACING: 1.15pt"> </SPAN>/<SPAN style="LETTER-SPACING: 1.15pt"> 
+</SPAN>Создать.<SPAN style="LETTER-SPACING: -1.15pt"> </SPAN>.<SPAN 
+style="LETTER-SPACING: -1.15pt"> </SPAN>.<SPAN style="LETTER-SPACING: -1.2pt"> 
+</SPAN>»)<SPAN style="LETTER-SPACING: 1.85pt"> </SPAN>с<SPAN 
+style="LETTER-SPACING: 1.85pt"> </SPAN>параметрами<SPAN 
+style="LETTER-SPACING: 1.85pt"> </SPAN>по<SPAN style="LETTER-SPACING: 1.85pt"> 
+</SPAN>умолча-</SPAN><o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.25pt 0cm 0pt 30.95pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>нию,</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.25pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>показанными</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.2pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>на</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.25pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>рис.</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.2pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'><A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark84"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; LETTER-SPACING: -0.05pt; text-underline: none">7.1</SPAN></A><SPAN 
+style="LETTER-SPACING: -0.05pt">.</SPAN><o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.6pt 8.2pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><?xml:namespace 
+prefix = "v" ns = "urn:schemas-microsoft-com:vml" /><v:shapetype id=_x0000_t202 
+path="m,l,21600r21600,l21600,xe" o:spt="202" coordsize="21600,21600"><v:stroke 
+joinstyle="miter"></v:stroke><v:path o:connecttype="rect" 
+gradientshapeok="t"></v:path></v:shapetype><v:shape id=_x0000_s1026 
+style="HEIGHT: 17.3pt; WIDTH: 7.8pt; MARGIN-TOP: 14pt; POSITION: absolute; TEXT-ALIGN: left; MARGIN-LEFT: 106pt; LEFT: 0px; Z-INDEX: -19463168; TEXT-INDENT: 0px; mso-position-horizontal-relative: page" 
+stroked="f" filled="f" type="#_x0000_t202"><v:textbox 
+inset="0,0,0,0"></v:textbox><?xml:namespace prefix = "w" ns = 
+"urn:schemas-microsoft-com:office:word" /><w:wrap 
+anchorx="page"></w:wrap></v:shape><SPAN 
+style="POSITION: absolute; LEFT: 0pt; Z-INDEX: -1663630336; mso-ignore: vglayout">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD 
+    style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; BACKGROUND-COLOR: transparent">
+      <DIV class=shape 
+      style="PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; PADDING-RIGHT: 0pt" 
+      v:shape="_x0000_s1026">
+      <P class=MsoNormal 
+      style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 9.85pt; mso-line-height-rule: exactly"><I 
+      style="mso-bidi-font-style: normal"><SPAN 
+      style='FONT-SIZE: 10pt; FONT-FAMILY: "Arial",sans-serif; mso-bidi-font-family: Georgia; mso-bidi-font-size: 11.0pt; mso-font-width: 132%'>×</SPAN></I><I 
+      style="mso-bidi-font-style: normal"><SPAN 
+      style='FONT-SIZE: 10pt; FONT-FAMILY: "Arial",sans-serif; mso-bidi-font-family: Georgia; mso-bidi-font-size: 11.0pt'><o:p></o:p></SPAN></I></P></DIV></TD></TR></TBODY></TABLE></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'><SPAN 
+style="mso-font-width: 95%">На этом рисунке выполним непростую работу по 
+рисованию ромбика разме-<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN></SPAN>рами<SPAN style="LETTER-SPACING: 0.4pt"> </SPAN>6<SPAN 
+style="LETTER-SPACING: 1.9pt"> </SPAN>4<SPAN style="LETTER-SPACING: 0.45pt"> 
+</SPAN>сантиметра,<SPAN style="LETTER-SPACING: 0.45pt"> 
+</SPAN>расположенного<SPAN style="LETTER-SPACING: 0.45pt"> </SPAN>по<SPAN 
+style="LETTER-SPACING: 0.45pt"> </SPAN>центру<SPAN 
+style="LETTER-SPACING: 0.4pt"> </SPAN>изображения.<o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.05pt 8.25pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>Сначала 
+установим в нижней части окна изображения требуемые единицы из-<SPAN 
+style="LETTER-SPACING: -2.15pt"> </SPAN>мерения (например, миллиметры, рис. 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'><A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark85"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none; mso-font-width: 95%">7.2). 
+</SPAN></A><SPAN style="mso-font-width: 95%">Если GIMP предварительно 
+настроен<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN>и установлено правильное 
+разрешение, то истинные размеры рисунка будут сов-<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN></SPAN><SPAN 
+style="LETTER-SPACING: -0.05pt">падать с устанавливаемыми при его создании 
+(настройки пакета обсуждались</SPAN> <SPAN style="mso-font-width: 95%">ранее). 
+Затем «вытащимc направляющие из верхней и боковой линеек так, что-<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN></SPAN><SPAN 
+style="LETTER-SPACING: -0.05pt">бы</SPAN><SPAN style="LETTER-SPACING: 0.65pt"> 
+</SPAN>их<SPAN style="LETTER-SPACING: 0.7pt"> </SPAN>пересечение<SPAN 
+style="LETTER-SPACING: 0.65pt"> </SPAN>оказалось<SPAN 
+style="LETTER-SPACING: 0.7pt"> </SPAN>точно<SPAN style="LETTER-SPACING: 0.65pt"> 
+</SPAN>в<SPAN style="LETTER-SPACING: 0.65pt"> </SPAN>центре<SPAN 
+style="LETTER-SPACING: 0.7pt"> </SPAN>изображения,<SPAN 
+style="LETTER-SPACING: 0.7pt"> </SPAN>а<SPAN style="LETTER-SPACING: 0.65pt"> 
+</SPAN>также<SPAN style="LETTER-SPACING: 0.65pt"> </SPAN>создадим</P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0cm 8.2pt 0pt 30.95pt"><v:shapetype 
+id=_x0000_t202 path="m,l,21600r21600,l21600,xe" o:spt="202" 
+coordsize="21600,21600"><v:stroke joinstyle="miter"></v:stroke><v:path 
+o:connecttype="rect" gradientshapeok="t"></v:path></v:shapetype><v:shape 
+id=_x0000_s1026 
+style="HEIGHT: 17.3pt; WIDTH: 7.8pt; MARGIN-TOP: 13.4pt; POSITION: absolute; TEXT-ALIGN: left; MARGIN-LEFT: 406.35pt; LEFT: 0px; Z-INDEX: -19462144; mso-position-horizontal-relative: page" 
+stroked="f" filled="f" type="#_x0000_t202"><v:textbox 
+inset="0,0,0,0"></v:textbox><w:wrap anchorx="page"></w:wrap></v:shape><SPAN 
+style="POSITION: absolute; LEFT: 0pt; Z-INDEX: -1663629312; mso-ignore: vglayout">
+<TABLE cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD 
+    style="BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; BACKGROUND-COLOR: transparent">
+      <DIV class=shape 
+      style="PADDING-BOTTOM: 0pt; PADDING-TOP: 0pt; PADDING-LEFT: 0pt; PADDING-RIGHT: 0pt" 
+      v:shape="_x0000_s1026">
+      <P class=MsoNormal 
+      style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 9.85pt; mso-line-height-rule: exactly"><I 
+      style="mso-bidi-font-style: normal"><SPAN 
+      style='FONT-SIZE: 10pt; FONT-FAMILY: "Arial",sans-serif; mso-bidi-font-family: Georgia; mso-bidi-font-size: 11.0pt; mso-font-width: 132%'>×</SPAN></I><I 
+      style="mso-bidi-font-style: normal"><SPAN 
+      style='FONT-SIZE: 10pt; FONT-FAMILY: "Arial",sans-serif; mso-bidi-font-family: Georgia; mso-bidi-font-size: 11.0pt'><o:p></o:p></SPAN></I></P></DIV></TD></TR></TBODY></TABLE></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'><SPAN 
+style="mso-font-width: 95%">направляющие для позиционирования углов ромба (рис. 
+</SPAN><A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark86"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none; mso-font-width: 95%">7.3).</SPAN></A><SPAN 
+style="mso-font-width: 95%"> Для разрешения,<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>показанного на рис. </SPAN><A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark84"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none; mso-font-width: 95%">7.1, 
+</SPAN></A><SPAN style="mso-font-width: 95%">размеры рисунка будут составлять 
+примерно 125<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN>88 мм,<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>поэтому точка условного «центраc будет 
+иметь координаты (62.5, 44.0) мм. По-<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN>зиционирование возможно с точностью до точки экрана, поэтому не нужно 
+огор-<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN></SPAN>чаться,<SPAN 
+style="LETTER-SPACING: 0.45pt"> </SPAN>если<SPAN style="LETTER-SPACING: 0.45pt"> 
+</SPAN>желаемые<SPAN style="LETTER-SPACING: 0.5pt"> </SPAN>координаты<SPAN 
+style="LETTER-SPACING: 0.45pt"> </SPAN>никак<SPAN 
+style="LETTER-SPACING: 0.45pt"> </SPAN>не<SPAN style="LETTER-SPACING: 0.5pt"> 
+</SPAN>устанавливаются.<o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 0pt 45.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>Для<SPAN 
+style="LETTER-SPACING: 1.35pt"> </SPAN>рисования<SPAN 
+style="LETTER-SPACING: 1.4pt"> </SPAN>выберем<SPAN 
+style="LETTER-SPACING: 1.35pt"> </SPAN>инструмент<SPAN 
+style="LETTER-SPACING: 1.4pt"> </SPAN>«Карандаш»<SPAN 
+style="LETTER-SPACING: 0.7pt"> </SPAN>и<SPAN style="LETTER-SPACING: 1.4pt"> 
+</SPAN>ширину<SPAN style="LETTER-SPACING: 1.4pt"> </SPAN>линии<SPAN 
+style="LETTER-SPACING: 1.35pt"> </SPAN>(диаметр</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'><o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.6pt 8.3pt 0pt 30.95pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>кисти) 
+в 3 точки экрана (рис. <A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark87"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none">7.4),</SPAN></A> 
+а цвет линии (цвет переднего плана) пусть<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN>будет<SPAN style="LETTER-SPACING: 0.85pt"> 
+</SPAN>чёрным.<o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.05pt 8.2pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>Однако 
+перед началом рисования нужно проверить настройку вида инстру-<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>мента («Файл / Настройка» в главном 
+окне). В пункте «Окно изображения» уста-<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>новим 
+режим курсора как пиктограмму </SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>инструмента 
+с перекрестьем (рис. <A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark88"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none">7.5).</SPAN></A><SPAN 
+style="LETTER-SPACING: -2.3pt"> </SPAN><SPAN style="mso-font-width: 95%">Этот 
+вариант даёт возможность точного позиционирования инструмента («Ка-<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN></SPAN>рандаша»)<SPAN 
+style="LETTER-SPACING: 0.65pt"> </SPAN>в<SPAN style="LETTER-SPACING: 0.7pt"> 
+</SPAN>точках<SPAN style="LETTER-SPACING: 0.7pt"> </SPAN>пересечения<SPAN 
+style="LETTER-SPACING: 0.65pt"> </SPAN>направляющих.<o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.45pt 8.2pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>После 
+всей этой предварительной подготовки приступим к рисованию. Уста-<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>новим перекрестье инструмента в начальную 
+точку (например, в левый угол бу-<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN>дущего ромба), нажмём клавишу &lt;SHIFT&gt;, удерживая её, щёлкнем левой 
+кноп-<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN>кой мыши, передвинем мышь к 
+следующему углу, снова щёлкнем левой кнопкой<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>и, продолжая эти действия, замкнём контур 
+ромба. После появления последней<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>линии 
+отпустим клавишу &lt;SHIFT&gt; (совет 1 «Советов дняc GIMP гласит: «Не<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>бойтесь<SPAN 
+style="LETTER-SPACING: 0.8pt"> </SPAN>экспериментов!.</P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0cm 8.2pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>Результат 
+показан на рис. </SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'><A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark89"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none; mso-font-width: 95%">7.6. 
+</SPAN></A><SPAN style="mso-font-width: 95%">Существенно, что позиция 
+инструмента «при-<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN></SPAN>липаетc к 
+направляющим и точкам их пересечения, так что «промахнутьсяc<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>достаточно<SPAN 
+style="LETTER-SPACING: 0.85pt"> </SPAN>трудно.<o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.25pt 8.3pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>Чтобы 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>очистить 
+рисунок от направляющих, в главном меню окна изобра-<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN><SPAN style="mso-font-width: 95%">жения 
+выбираем команду «Изображение / Направляющая / Удалить направляю-<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN></SPAN>щие».<o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.65pt 8.35pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.1pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>После</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.3pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.1pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>этого</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.25pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.1pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>хорошо</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.25pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>бы</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.25pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>сохранить</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.25pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>всё,</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.25pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>что</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.25pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>«нажито</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.25pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>непосильным</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.25pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>трудомc,</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.25pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>в</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -2.3pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>файл<SPAN 
+style="LETTER-SPACING: 0.75pt"> </SPAN>(лучше<SPAN 
+style="LETTER-SPACING: 0.8pt"> </SPAN>пока<SPAN style="LETTER-SPACING: 0.8pt"> 
+</SPAN>использовать<SPAN style="LETTER-SPACING: 0.8pt"> </SPAN>формат<SPAN 
+style="LETTER-SPACING: 0.8pt"> </SPAN>XCF).<o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.05pt 8.25pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>Таким 
+образом, используя направляющие и возможность рисования прямых<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>линий, можно создавать контуры в виде 
+ломаных линий. Однако для большин-<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN>ства случаев такой способ является малоэффективным, и GIMP предлагает 
+более<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>подходящие</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.25pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>инструменты<SPAN 
+style="LETTER-SPACING: -0.25pt"> </SPAN>для<SPAN style="LETTER-SPACING: -0.2pt"> 
+</SPAN>рисования<SPAN style="LETTER-SPACING: -0.25pt"> </SPAN>основных<SPAN 
+style="LETTER-SPACING: -0.2pt"> </SPAN>геометрических<SPAN 
+style="LETTER-SPACING: -0.25pt"> </SPAN>фигур.<o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0cm 8.3pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>Интересным 
+инструментом является обводка выделения («Правка / Обвести<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 90%'>выделенное.<SPAN 
+style="LETTER-SPACING: -0.55pt"> </SPAN>.<SPAN style="LETTER-SPACING: -0.55pt"> 
+</SPAN>.<SPAN style="LETTER-SPACING: -0.5pt"> </SPAN>»<SPAN 
+style="LETTER-SPACING: 2.5pt"> </SPAN>в<SPAN style="LETTER-SPACING: 1.1pt"> 
+</SPAN>главном<SPAN style="LETTER-SPACING: 1.05pt"> </SPAN>меню<SPAN 
+style="LETTER-SPACING: 1.05pt"> </SPAN>окна<SPAN style="LETTER-SPACING: 1.05pt"> 
+</SPAN>изображения).<SPAN style="LETTER-SPACING: 1.05pt"> </SPAN>Однако<SPAN 
+style="LETTER-SPACING: 1.05pt"> </SPAN>перед<SPAN 
+style="LETTER-SPACING: 1.05pt"> </SPAN>использова-</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'><o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.1pt 8.35pt 0pt 30.95pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>нием 
+этой функции рассмотрим некоторые особенности выделения областей в<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>GIMP.</SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.1pt 8.35pt 0pt 30.95pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'></SPAN><SPAN 
+style="FONT-SIZE: 10pt; LETTER-SPACING: -0.05pt; mso-font-width: 110%"><SPAN 
+style="mso-list: Ignore"><SPAN 
+style='FONT: 7pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; 
+</SPAN></SPAN></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>Существуют<SPAN 
+style="LETTER-SPACING: 1.15pt"> </SPAN>инструменты<SPAN 
+style="LETTER-SPACING: 1.15pt"> </SPAN>прямоугольного<SPAN 
+style="LETTER-SPACING: 1.15pt"> </SPAN>выделения<SPAN 
+style="LETTER-SPACING: 1.15pt"> </SPAN>и<SPAN style="LETTER-SPACING: 1.2pt"> 
+</SPAN>выделения<SPAN style="LETTER-SPACING: 1.15pt"> </SPAN>эллип</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>са;<o:p></o:p></SPAN></P>
+<P class=MsoBodyText style="MARGIN: 0.15pt 0cm 0pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'><o:p>&nbsp;</o:p></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>При<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>нажатой<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>клавише</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: 2.15pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>&lt;SHIFT&gt;</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: 2.15pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>прямоугольное</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: 2.2pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>выделение</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: 2.15pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>превращается<SPAN 
+style="LETTER-SPACING: -2.15pt"> </SPAN></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>в<SPAN 
+style="LETTER-SPACING: 0.75pt"> </SPAN>квадрат,<SPAN 
+style="LETTER-SPACING: 0.8pt"> </SPAN>а<SPAN style="LETTER-SPACING: 0.8pt"> 
+</SPAN>эллиптическое<SPAN style="LETTER-SPACING: -0.55pt"> </SPAN>—<SPAN 
+style="LETTER-SPACING: -0.5pt"> </SPAN>в<SPAN style="LETTER-SPACING: 0.8pt"> 
+</SPAN>круг;</SPAN></P><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>
+<P class=MsoBodyText style="MARGIN: 0.4pt 0cm 0pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>При<SPAN 
+style="LETTER-SPACING: 1.15pt"> </SPAN>нажатой<SPAN 
+style="LETTER-SPACING: 1.15pt"> </SPAN>клавише<SPAN 
+style="LETTER-SPACING: 1.15pt"> </SPAN>&lt;SHIFT&gt;<SPAN 
+style="LETTER-SPACING: 1.15pt"> </SPAN>происходит<SPAN 
+style="LETTER-SPACING: 1.15pt"> </SPAN>объединение<SPAN 
+style="LETTER-SPACING: 1.15pt"> </SPAN>выделенных<SPAN 
+style="LETTER-SPACING: 1.15pt"> </SPAN>об-<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>ластей;</SPAN></P>
+<P class=MsoBodyText style="MARGIN: 0.4pt 0cm 0pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'></SPAN><SPAN 
+style="FONT-SIZE: 10pt; LETTER-SPACING: -0.05pt; mso-font-width: 110%"><SPAN 
+style="mso-list: Ignore"><SPAN 
+style='FONT: 7pt "Times New Roman"'>&nbsp;</SPAN></SPAN></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>При<SPAN 
+style="LETTER-SPACING: 1.05pt"> </SPAN>нажатой<SPAN 
+style="LETTER-SPACING: 1.1pt"> </SPAN>клавише<SPAN 
+style="LETTER-SPACING: 1.1pt"> </SPAN>&lt;CTRL&gt;<SPAN 
+style="LETTER-SPACING: 1.1pt"> </SPAN>выделение<SPAN 
+style="LETTER-SPACING: 1.1pt"> </SPAN>центрируется<SPAN 
+style="LETTER-SPACING: 1.1pt"> </SPAN>относительно<SPAN 
+style="LETTER-SPACING: 1.1pt"> </SPAN>на-<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>чала<SPAN 
+style="LETTER-SPACING: 0.8pt"> </SPAN>выделения;</SPAN></P>
+<P class=MsoBodyText style="MARGIN: 0.4pt 0cm 0pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>Если<SPAN 
+style="LETTER-SPACING: 2pt"> </SPAN>выделена<SPAN 
+style="LETTER-SPACING: 1.95pt"> </SPAN>какая-то<SPAN 
+style="LETTER-SPACING: 2.05pt"> </SPAN>область<SPAN style="LETTER-SPACING: 2pt"> 
+</SPAN>и<SPAN style="LETTER-SPACING: 2.05pt"> </SPAN>создаются<SPAN 
+style="LETTER-SPACING: 2pt"> </SPAN>новые<SPAN style="LETTER-SPACING: 2pt"> 
+</SPAN>выделенные<SPAN style="LETTER-SPACING: 2.05pt"> </SPAN>области<SPAN 
+style="LETTER-SPACING: -2.15pt"> </SPAN></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>при 
+нажатой клавише &lt;CTRL&gt;,<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN>то они 
+вычитаются из<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN>первоначальной.<o:p></o:p></SPAN></P>
+<P class=MsoBodyText style="MARGIN: 0.1pt 0cm 0pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0cm 31.25pt 0pt 8.05pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>На 
+рис. </SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'><A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark90"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none; mso-font-width: 95%">7.7</SPAN></A><SPAN 
+style="mso-font-width: 95%"> показан пример использования вычитания и 
+объединения выде-<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN></SPAN>ленных<SPAN 
+style="LETTER-SPACING: 0.85pt"> </SPAN>областей.<o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.05pt 31.2pt 0pt 8.05pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.1pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>Теперь 
+для этого выделения </SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>используем 
+обводку. Вызовем диалог обводки</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+<SPAN style="LETTER-SPACING: -0.05pt; mso-font-width: 95%">выделения («Правка / 
+Обвести </SPAN><SPAN style="mso-font-width: 95%">выделенное. . . », рис. 
+</SPAN><A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark91"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none; mso-font-width: 95%">7.8)</SPAN></A><SPAN 
+style="mso-font-width: 95%"> и установим толщину<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN></SPAN><SPAN 
+style="LETTER-SPACING: -0.05pt">линии в 1 точку </SPAN>экрана (пиксел). После 
+нажатия на кнопку «Обвести» и щелч-<SPAN style="LETTER-SPACING: -2.3pt"> 
+</SPAN>ка мышью в любой точке рисунка для снятия выделения получим 
+результат,<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN>показанный<SPAN 
+style="LETTER-SPACING: 0.8pt"> </SPAN>на<SPAN style="LETTER-SPACING: 0.8pt"> 
+</SPAN>рис.<SPAN style="LETTER-SPACING: 0.85pt"> </SPAN><A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark92"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none">7.9.</SPAN></A></P>
+<P class=MsoBodyText style="MARGIN: 0.4pt 0cm 0pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0cm 8.3pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>Рассмотрим 
+ещё одну интересную особенность выделения областей в GIMP —<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>прямоугольник со скруглёнными краями 
+(«Выделение / Скруглённый прямоуголь-<SPAN style="LETTER-SPACING: -2.85pt"> 
+</SPAN>ник. . . » в главном меню окна изображения, рис. </SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'><A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark99"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none; mso-font-width: 95%">7.16). 
+</SPAN></A><SPAN style="mso-font-width: 95%">При этом скругление мо-<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN></SPAN>жет<SPAN 
+style="LETTER-SPACING: 0.45pt"> </SPAN>быть<SPAN style="LETTER-SPACING: 0.45pt"> 
+</SPAN>как<SPAN style="LETTER-SPACING: 0.45pt"> </SPAN>положительное<SPAN 
+style="LETTER-SPACING: 0.45pt"> </SPAN>(наружу),<SPAN 
+style="LETTER-SPACING: 0.45pt"> </SPAN>так<SPAN style="LETTER-SPACING: 0.45pt"> 
+</SPAN>и<SPAN style="LETTER-SPACING: 0.45pt"> </SPAN>отрицательное<SPAN 
+style="LETTER-SPACING: 0.45pt"> </SPAN>(внутрь).<o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.7pt 8.25pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>Используя 
+направляющие, выделение квадрата и скругление углов, создадим<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>фигуру, 
+показанную на рис. <A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark100"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none">7.17.</SPAN></A> 
+Теперь выберем инструмент «Заливка» с па-<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN><SPAN style="mso-font-width: 95%">раметрами, показанными на рис. 
+</SPAN><A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark101"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none; mso-font-width: 95%">7.18 
+</SPAN></A><SPAN style="mso-font-width: 95%">(заливка шаблоном), и зальём 
+выбранным<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN>шаблоном область между 
+внутренним и внешним контурами, получив декора-<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN></SPAN>тивную<SPAN 
+style="LETTER-SPACING: 0.75pt"> </SPAN>рамку,<SPAN 
+style="LETTER-SPACING: 0.8pt"> </SPAN>показанную<SPAN 
+style="LETTER-SPACING: 0.75pt"> </SPAN>на<SPAN style="LETTER-SPACING: 0.8pt"> 
+</SPAN>рис.<SPAN style="LETTER-SPACING: 0.8pt"> </SPAN><A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark102"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none">7.19.</SPAN></A><o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.45pt 8.3pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>Теперь 
+в эту рамку можно вставить чей-нибудь портрет. Например, </SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>создан-<SPAN 
+style="LETTER-SPACING: -2.3pt"> </SPAN><SPAN 
+style="mso-font-width: 95%">ный<SPAN style="LETTER-SPACING: 0.75pt"> 
+</SPAN>ранее<SPAN style="LETTER-SPACING: 0.8pt"> </SPAN>портрет<SPAN 
+style="LETTER-SPACING: 0.8pt"> </SPAN>собачки,<SPAN 
+style="LETTER-SPACING: 0.8pt"> </SPAN>при<SPAN style="LETTER-SPACING: 0.8pt"> 
+</SPAN>необходимости<SPAN style="LETTER-SPACING: 0.8pt"> </SPAN>его<SPAN 
+style="LETTER-SPACING: 0.8pt"> </SPAN>масштабировав<SPAN 
+style="LETTER-SPACING: 0.8pt"> </SPAN>(рис.<SPAN style="LETTER-SPACING: 0.8pt"> 
+</SPAN></SPAN><A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark103"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none; mso-font-width: 95%">7.20).</SPAN></A></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0cm 31.2pt 0pt 8.05pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>Кроме 
+всего прочего, для создания базовых фигур и их модификации в GIMP<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>встроен<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>собственный<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>векторный<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>графический<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>редактор</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: 2.15pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>Gfig,</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: 2.15pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>который</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: 2.2pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'> 
+</SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-font-width: 95%'>уступает<SPAN 
+style="LETTER-SPACING: -2.15pt"> </SPAN></SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; LETTER-SPACING: -0.05pt; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>по 
+возможностям таким векторным редакторам, </SPAN><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>как 
+OpenOffice.org Draw или<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN>Inkscape,<SPAN style="LETTER-SPACING: 0.25pt"> </SPAN>но<SPAN 
+style="LETTER-SPACING: 0.25pt"> </SPAN>вполне<SPAN 
+style="LETTER-SPACING: 0.3pt"> </SPAN>достаточен<SPAN 
+style="LETTER-SPACING: 0.25pt"> </SPAN>для<SPAN style="LETTER-SPACING: 0.3pt"> 
+</SPAN>быстрого<SPAN style="LETTER-SPACING: 0.25pt"> </SPAN>создания<SPAN 
+style="LETTER-SPACING: 0.25pt"> </SPAN>примитивов.<o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.1pt 31.2pt 0pt 8.05pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>Редактор<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>Gfig<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN>«запрятанc<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN>довольно<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>глубоко<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN>в<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN>недрах<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN>меню<SPAN 
+style="LETTER-SPACING: 2.45pt"> </SPAN>GIMP<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN><SPAN style="mso-font-width: 95%">(«Фильтры / Визуализация / Gfig. . . » 
+или<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN>«Фильтры / Рендеринг / Gfig. . . 
+» в<SPAN style="LETTER-SPACING: 0.05pt"> </SPAN>зависимости от версии и сборки). 
+После вызова получаем окно графического ре-<SPAN style="LETTER-SPACING: 0.05pt"> 
+</SPAN></SPAN><SPAN style="LETTER-SPACING: -0.05pt">дактора</SPAN><SPAN 
+style="LETTER-SPACING: -0.5pt"> </SPAN>c<SPAN style="LETTER-SPACING: -0.45pt"> 
+</SPAN>инструментами<SPAN style="LETTER-SPACING: -0.5pt"> </SPAN>рисования<SPAN 
+style="LETTER-SPACING: -0.5pt"> </SPAN>и<SPAN style="LETTER-SPACING: -0.45pt"> 
+</SPAN>работы<SPAN style="LETTER-SPACING: -0.45pt"> </SPAN>с<SPAN 
+style="LETTER-SPACING: -0.5pt"> </SPAN>объектами<SPAN 
+style="LETTER-SPACING: -0.5pt"> </SPAN>(рис.<SPAN 
+style="LETTER-SPACING: -0.45pt"> </SPAN><A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark104"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none">7.21),<SPAN 
+style="LETTER-SPACING: -0.5pt"> </SPAN></SPAN></A>а<SPAN 
+style="LETTER-SPACING: -0.5pt"> </SPAN>всё.<SPAN 
+style="LETTER-SPACING: -0.45pt"> </SPAN>что<SPAN style="LETTER-SPACING: -2.3pt"> 
+</SPAN>в<SPAN style="LETTER-SPACING: -0.1pt"> </SPAN>нем<SPAN 
+style="LETTER-SPACING: -0.05pt"> </SPAN>нарисовано,<SPAN 
+style="LETTER-SPACING: -0.05pt"> </SPAN>тут<SPAN 
+style="LETTER-SPACING: -0.05pt"> </SPAN>же<SPAN style="LETTER-SPACING: -0.05pt"> 
+</SPAN>отображается<SPAN style="LETTER-SPACING: -0.05pt"> </SPAN>в<SPAN 
+style="LETTER-SPACING: -0.1pt"> </SPAN>окне<SPAN 
+style="LETTER-SPACING: -0.05pt"> </SPAN>изображения<SPAN 
+style="LETTER-SPACING: -0.05pt"> </SPAN>GIMP<SPAN 
+style="LETTER-SPACING: -0.05pt"> </SPAN>(рис.<SPAN 
+style="LETTER-SPACING: -0.05pt"> </SPAN><A 
+href="file:///C:/Users/akiko/Downloads/altlibrary-gimp-20091012.docx#_bookmark105"><SPAN 
+style="TEXT-DECORATION: none; COLOR: windowtext; text-underline: none">7.22).</SPAN></A><o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.4pt 31.2pt 0pt 8.05pt; TEXT-INDENT: 14.9pt"><SPAN 
+style='FONT-SIZE: 14pt; FONT-FAMILY: "Calibri",sans-serif; mso-bidi-theme-font: minor-latin; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin'>Если 
+закрыть Gfig, а потом снова открыть, то можно модифицировать со-<SPAN 
+style="LETTER-SPACING: 0.05pt"> </SPAN><SPAN 
+style="LETTER-SPACING: -0.05pt">зданные ранее объекты (при условии. </SPAN>что 
+файл не был экспортирован в растр,<SPAN style="LETTER-SPACING: -2.3pt"> 
+</SPAN>а<SPAN style="LETTER-SPACING: 0.8pt"> </SPAN>был<SPAN 
+style="LETTER-SPACING: 0.85pt"> </SPAN>сохранён<SPAN 
+style="LETTER-SPACING: 0.85pt"> </SPAN>в<SPAN style="LETTER-SPACING: 0.85pt"> 
+</SPAN>формате<SPAN style="LETTER-SPACING: 0.85pt"> 
+</SPAN>XCF).<o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.45pt 8.3pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.05pt 31.2pt 0pt 8.05pt; TEXT-INDENT: 14.9pt"><o:p></o:p></SPAN></P></SPAN>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.45pt 8.2pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><o:p></o:p></SPAN></P>
+<P class=MsoBodyText 
+style="TEXT-ALIGN: justify; MARGIN: 0.05pt 8.25pt 0pt 30.95pt; TEXT-INDENT: 14.9pt"><o:p></o:p></SPAN></P>
+
+				</div>
+			</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				<li>
+					<h2></h2>
+					<p></p>
+				</li>
+				<li>
+					<h2>Содержание</h2>
+					<ul>
+					<li><a style="" href="index.html">Главная</a></li>
+<li><a style="" href="page17.html">Глава 1. Введение в Photoshop</a></li>
+<li><a style="" href="page1.html">1.1. Основные сведения о рабочей среде</a></li>
+<li><a style="" href="page2.html">1.2. Создание документа</a></li>
+<li><a style="" href="page3.html">1.3. Использование монтажных областей в Adobe Photoshop</a></li>
+<li><a style="" href="page4.html">1.4. Работа с растровыми и векторными изображениями</a></li>
+<li><a style="" href="page5.html">1.5. Растровые и векторные изображения</a></li>
+<li><a style="" href="page6.html">1.6. Рисование и редактирование фигур</a></li>
+<li><a style="" href="page7.html">1.7. Цветовые режимы</a></li>
+<li><a style="" href="page8.html">1.8. Форматы файла</a></li>
+<li><a style="" href="page9.html">1.9. HDR-изображения</a></li>
+<li><a style="" href="page10.html">1.10. Основные сведения о слоях</a></li>
+<li><a style="" href="page11.html">1.11. Деформация перспективы</a></li>
+<li><a style="" href="page12.html">1.12. Примеры использования инструмента " Восстанавливающая кисть".</a></li>
+<li><a style="" href="page13.html">1.13. Корректировка резкости и размытия изображения</a></li>
+<li><a style="" href="page14.html">1.14. О цветокоррекции</a></li>
+<li><a style="" href="page15.html">1.15. Введение в CameraRaw</a></li>
+<li><a style="" href="page16.html">1.16. Трансформирование изображений,фигур и контуров</a></li>
+<li><a style="" href="page18.html">Глава 2. Что такое GIMP и зачем он нужен</a></li>
+<li><a style="" href="page19.html">2.1. Версии,лиценцзии,информационные ресурсы</a></li>
+<li><a style="" href="page20.html">2.2. Работа с цифровыми фотографиями</a></li>
+<li><a style="" href="page21.html">2.3. Настройка GIMP</a></li>
+<li><a style="" href="page22.html">2.4. Форматы файлов: входные,выходные,внутренние</a></li>
+<li><a style="" href="page23.html">2.5. Тексты в GIMP</a></li>
+<li class="active"><a style="" href="page24.html">2.6. Создание изображения из примитивов</a></li>
+<li><a style="" href="page25.html">2.7. Контуры в GIMP</a></li>
+<li><a style="" href="page26.html">Тест 1 по главе 1 (основы)</a></li>
+<li><a style="" href="page27.html">Тест 2  по главе 1 (функционал)</a></li>
+
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	<!-- end #page -->
+	<div id="footer-bgcontent">
+	<div id="footer">
+		<p>Автор: Байков Э.А. | <a href="http://www.freecsstemplates.org/">Free CSS Templates</a> | <a href="http://brullworfel.ru/turbosite">TurboSite</a></p>
+	</div>
+	</div>
+	<!-- end #footer -->
+</div>
+</body>
+</html>
